@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeDetails Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="site-data/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="site-data/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="site-data/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="site-data/favicon-16x16.png">
+    <link rel="manifest" href="site-data/site.webmanifest">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
+    </header>
+    <div class="container">
+      <h1>FakeDetails Generator</h1>
+      <p class="warning">All the data on this site is fake and should not be used for any real purposes.</p>
+      <div id="initial-buttons">
+        <button id="generate-random">Generate Random Details</button>
+        <button id="choose-nationality">Choose Nationality</button>
+      </div>
+      <div id="nationality-grid" class="hidden">
+        <!-- Nationality buttons will be populated here by JS -->
+        <div id="nationalities"></div>
+        <button id="random-nationality">Random</button>
+      </div>
+      <div id="user-details" class="hidden">
+        <img id="user-image" class="circle" src="" alt="User Image">
+        <div id="user-info"></div>
+        <div id="action-buttons">
+          <button id="generate-again">Generate Again</button>
+          <button id="choose-again">Choose Again</button>
+          <button id="download-details">Download Details</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="https://discord.com/invite/2nHHHBWNDw" target="_blank">
+        <i class="fab fa-discord"></i>
+      </a>
+      <a href="https://ko-fi.com/thatsinewave" target="_blank">
+        <i class="fas fa-heart"></i>
+      </a>
+      <a href="https://github.com/ThatSINEWAVE/EverythingCats" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
